@@ -76,7 +76,7 @@ LGBMReg = MLJ.@load LGBMRegressor pkg=LightGBM
 export plot_3d
 
 # Include functions Lux network training
-include("lux2.jl")
+include("Lux.jl")
 
 
 """

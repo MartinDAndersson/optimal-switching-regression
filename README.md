@@ -19,7 +19,7 @@ The framework is particularly suited for applications in energy markets, where p
 
 - **Core Framework** (`src/OptSwitch.jl`): Main module that imports dependencies and exports key functions
 - **Stochastic Process Models** (`src/data_generation.jl`): Implementation of SDE and jump processes for simulation
-- **Neural Network Training** (`src/lux2.jl`): Infrastructure for training and evaluating neural networks
+- **Neural Network Training** (`src/Lux.jl`): Infrastructure for training and evaluating neural networks
 - **Model Abstractions** (`src/model_abstractions.jl`): Unified interface for different model types
 - **Training Utilities** (`src/TrainingLogger.jl`, `src/TrainingPlots.jl`): Tools for logging and visualizing model training
 
