@@ -68,7 +68,6 @@ J_t = Σ_{i=1}^{N_t} Y_i
 
 where N_t is a Poisson process with intensity λ and Y_i are i.i.d. jump sizes.
 Common implementations include:
-- Merton jump-diffusion: Y_i ~ Normal(μ_J, σ_J²)
 - Exponential jumps: Y_i ~ Exponential(λ)
 """
 struct JumpProcess{FuncType1<:Function,FuncType2<:Function,FuncType3<:Function}
@@ -100,11 +99,6 @@ Implements the Euler-Maruyama scheme:
 X_{n+1} = X_n + μ(X_n, t_n)Δt + σ(X_n, t_n)√Δt·Z_n
 
 where Z_n ~ N(0, I) are independent standard normal random variables.
-
-# Numerical Properties
-- Strong order of convergence: 0.5
-- Weak order of convergence: 1.0
-- Preserves martingale property approximately
 """
 function cpu_euler_maryama_alt(X_prev, time, dt, drift, dispersion, p)
     d, M = size(X_prev)
