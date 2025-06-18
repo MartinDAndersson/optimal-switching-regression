@@ -143,12 +143,9 @@ scripts/
 │   ├── hcl_plots.jl             # Plotting functions for HCL model
 │   ├── bsp_plots.jl             # Plotting functions for BSP model
 │   └── aclp_plots.jl            # Plotting functions for ACLP model
-├── benchmarks/                  # Validation and timing scripts
-│   ├── complexity_validation.jl # Benchmark script for validating theoretical complexity
-│   └── benchmark_training_times.jl # Training time benchmarks
-└── utils/                       # Additional utilities and outputs
-    ├── scaling-plots.py         # Python visualization utilities
-    └── *.pdf, *.png, *.csv      # Generated outputs and results
+└── benchmarks/                  # Validation and timing scripts
+    ├── complexity_validation.jl # Benchmark script for validating theoretical complexity
+    └── benchmark_training_times.jl # Training time benchmarks
 ```
 
 ## Running Experiments
